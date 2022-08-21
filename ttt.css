@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: rgb(255, 72, 0);
+}
+*{
+    color: aliceblue;
+}
+table{
+    border-collapse: collapse;
+}
+
+th, td{
+border: 2px solid rgb(26, 84, 15);
+padding: 10px;
+text-align: center;
+}
+img{
+    width: 5cm;
+    border-radius: 20px;
+    position: relative;
+}
+.icon{
+    width: 5ch;
+   
+}
+th{
+    color: brown;
+}
