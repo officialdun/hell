@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="Stylesheet" type="text/css" href="login.css">
+   
+    <title>Create account</title>
+
+</head>
+<body>
+    
+<form>
+     
+<div class="formbox" id="boxnewuser">
+    <img class="icon" src="images/icon2.png">
+    <h1 class="h1">Registration form</h1>
+            <label>First name</label>
+            <br>
+            <input class="blank" type="text" placeholder="First Name" required>
+            <br>   
+        <label>Last name</label>
+        <br>
+            <input class="blank" type="text" placeholder="Last Name" required>
+        <br>
+           <label>ID number</label>
+            <br>
+            <input class="blank" type="number" maxlength="8" placeholder="national id number" required>
+        <br>
+            <label>Passport number</label>
+            <br>
+            <input class="blank" type="number" placeholder="passport number" maxlength="15">
+        <br>
+            <label>Phone number</label>
+            <br>
+            <input class="blank" type="number" placeholder="0714570060" required maxlength="10">
+        <br>
+            <label>Email</label>
+           <br>
+            <input class="blank" type="email" placeholder="enter your email address" required>
+
+        <br>
+            <label>Birthday</label>
+            <br>
+            <input class="blank" type="date">
+        <br>`z
+            <label>Country</label>
+            <br>
+
+             <select class="blank" id="country">
+                <option></option>
+                <option>Kenya</option>
+                <option>Uganda</option>
+                <option>Tanzania</option>
+                <option>Congo</option>
+                <option>Rwanda</option>
+                <option>Burundi</option>
+            </select>
+
+                <legend>Password</legend>
+                <input class="blank" type="password" name="pass"  placeholder="password" required>
+               <legend>Confirm password</legend>
+              <input class="blank" type="password" name="pass"  placeholder="confirm password" required>
+               <br>
+               <br>
+              <input type="submit" value="Confirm" class="loginbutton">            
+            <br><br>
+      </form>
+      <div class="end">
+        <a href="login.html" style="text-decoration: none;">
+            Click here to log in
+          </a>
+
+      </div>
+   
+</body>
+</html>
