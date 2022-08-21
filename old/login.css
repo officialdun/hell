@@ -1,9 +1,9 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-image:url(images/truckers.jpg);
-   /* filter: blur();
-    background: linear-gradient(blue,green);*/
+    /*background-image:url(images/truckers.jpg);
+    filter: blur();*/
+    background: linear-gradient(blue,green);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
