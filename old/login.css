@@ -1,9 +1,9 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-image:url(images/truckers.jpg);
-   /* filter: blur();
-    background: linear-gradient(blue,green);*/
+   /* background-image:url(images/truckers.jpg);
+    filter: blur();*/
+    background: linear-gradient(blue,green);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,167 +13,8 @@ body{
     font-weight: bold;
     
 }
-/*:root{
-    color-scheme: dark;
-}*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                                                                                      --------------------
 .h1{
    text-transform: uppercase;
     text-align: center;
@@ -190,7 +31,8 @@ body{
     
 }
 .formbox{/*affects each form in every page*/
-    margin-left: 50%;
+    
+    margin: 45%;
     padding: 30px 15px;
     margin-top: 20%;
     background: linear-gradient(blue,green);
