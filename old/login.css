@@ -31,11 +31,14 @@ body{
 }
 .formbox{/*affects each form in every page*/
     
-    margin: 45%;
+    
     padding: 30px 15px;
     margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
     background: linear-gradient(blue,green);
-    position:absolute;
+    position:relative;
+    width: fit-content;
 }
 
 .blank{
