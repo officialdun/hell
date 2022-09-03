@@ -52,14 +52,16 @@ body{
    
 
 }
-.loginbutton{ /*affects both logins buttons in admin and driver pages && confirm button when registering*/
+#loginbutton{ /*affects both logins buttons in admin and driver pages && confirm button when registering*/
     font-size: large;
-    text-decoration: none;
+    font-weight: 1000;
     border-radius: 10px;
     height: 40px;
     width: 300px;
     border: none;
-    color: green;
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+ 
 }
 
 #country{
@@ -74,6 +76,20 @@ body{
     color:white;
 }
 .contactusbutton{
+    font-weight: bold;
+    background-color: rgba(16, 227, 72, 0.916);
     border-radius: 1px;
     height: 30px;
+}
+a:link{
+    color: white;
+}
+a:hover{
+    color: red;
+}
+button:hover{
+    background-color: rgb(91, 83, 151)
+}
+button:active{
+    background-color: orange;
 }
