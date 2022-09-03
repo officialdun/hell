@@ -63,8 +63,9 @@ body{
 }
 
 #country{
+   
     background-color: transparent;
-    color: darkblue;
+    color: orange;
     border-color: aliceblue;
 
 }
