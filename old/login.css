@@ -56,11 +56,13 @@ body{
 }
 #loginbutton{ /*affects both logins buttons in admin and driver pages && confirm button when registering*/
     font-size: large;
+    color: white;
     font-weight: 1000;
     border-radius: 10px;
     height: 40px;
     width: 300px;
-    border: none;
+    border: 2px solid white;
+    background-color: transparent;
     font-family:'Times New Roman', Times, serif;
     margin-bottom: 10px;
  
@@ -88,12 +90,13 @@ a:hover{
     color: red;
 }
 button:hover{
-    background-color: rgb(91, 83, 151)
+    background-color: white;
 }
 button:active{
     background-color: grey;
 }
 
-button:hover{
-    box-shadow: 5px 3px 5px green;
+#loginbutton:hover{
+    color: black;
+    background-color: white;
 }
