@@ -50,10 +50,6 @@ function renderGame(){
                 cardEl.textContent +=cards[i] +" "
                 console.log(cards[i])
              }
-        
-        for(let i=0;i<cards.length;i++){
-             }
-    
     
         if (sum<=20){
             outcomeMessage = "Do you wanna draw a new card? "
