@@ -2656,7 +2656,7 @@
         data-styled.g115[id="sc-kZLDfD"] {
             content: "iLltjV,"
         }
-
+sc-dWRHGJ
         /*!sc*/
 
         .iXCDZi {
@@ -3972,7 +3972,7 @@
                                     <div class="Herostyled__TextAnimationWrapper-sc-2dpio7-5 jLIvEf" style="opacity:5;transform:translateY(20px) translateZ(0)">
                                         <h5 class="StyledHeading-sc-1rdh4aw-0 gVSeoe sc-khsqcC brDbSt Herostyled__Eyebrow-sc-2dpio7-6 dmrETE"> immigration lawyers</h5>
                                         <h2 class="StyledHeading-sc-1rdh4aw-0 lgJzPy sc-khsqcC brDbSt Herostyled__Title-sc-2dpio7-7 ilpCyO">Get the right <br>lawyer for your <span class="Herostyled__HighlightText-sc-2dpio7-8 gcctAh">
-                                            <span class="sc-xWrgk iXCDZi"><span class="sc-dWRHGJ eByvYe">immigration</span></span>
+                                            <span class="sc-xWrgk iXCDZi"><span class="sc-dWRHGJ eByvYe" id="textChange">immigration</span></span>
                                             </span>
                                         </h2><a href="/immigration/onboarding"><button tabindex="0" class="StyledBox-sc-13pk1d4-0 ktvllf sc-dkBdza Button__CustomButton-sc-1p0myx5-0 hyORZB kkvrZx">Let&#x27;s talk</button></a></div>
                                 </div>
@@ -4419,6 +4419,21 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     </div>
     </div>
     <script>
+
+        var headingElement = document.getElementById("textChange");
+        var text = ["immigration", "visa","citizenship","Green Card"];
+        var currentIndex = 0;
+
+        function updateText(){
+            headingElement.innerHTML = text[currentIndex];
+            currentIndex=(currentIndex+1)%text.length;
+        }
+        updateText();
+        setInterval(updateText, 3000);
+        
+
+
+
         setTimeout(function() {
             var rungtm = function(w, d, s, l, i) {
                 w[l] = w[l] || [];
