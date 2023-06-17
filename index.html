@@ -2663,6 +2663,7 @@ sc-dWRHGJ
             overflow: hidden;
             display: inline-block;
             vertical-align: bottom;
+        
         }
 
         /*!sc*/
@@ -2682,9 +2683,11 @@ sc-dWRHGJ
         .eByvYe {
             position: relative;
             -webkit-animation: iiSwXO 1.2s cubic-bezier(0.19, 1, 0.22, 1), cPhxlI 2s 1.2s, geHoAj 1.2s 3.2s cubic-bezier(0.19, 1, 0.22, 1);
-            animation: iiSwXO 1.2s cubic-bezier(0.19, 1, 0.22, 1), cPhxlI 2s 1.2s, geHoAj 1.2s 3.2s cubic-bezier(0.19, 1, 0.22, 1);
+            animation: iiSwXO 1.2s cubic-bezier(0.19, 1, 0.22, 1), cPhxlI 2s 1.2s, geHoAj 3.2s 3.2s cubic-bezier(0.19, 1, 0.22, 1);
             -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            margin: auto;
         }
 
         /*!sc*/
@@ -3470,6 +3473,7 @@ sc-dWRHGJ
 
         @media (max-width:960px) {
             .jLIvEf {
+                
                 -webkit-box-pack: start;
                 -webkit-justify-content: flex-start;
                 -ms-flex-pack: start;
@@ -3875,7 +3879,7 @@ sc-dWRHGJ
                 top: 0;
             }
             100% {
-                top: -1.5em;
+                top: -2.2em;
             }
         }
 
@@ -3933,7 +3937,7 @@ sc-dWRHGJ
                     analytics.page();
                 }
         }();
-    </script>
+    </script>-->
     <link as="script" rel="preload" href="/webpack-runtime-36808394463fc0ce412d.js" />
     <link as="script" rel="preload" href="/framework-1efd3f7e294552bc2d08.js" />
     <link as="script" rel="preload" href="/94a7ad86-d3c84ec9cf06c926913a.js" />
@@ -3942,7 +3946,7 @@ sc-dWRHGJ
     <link as="script" rel="preload" href="/app-ee9cb86e351284aaaeb3.js" />
     <link as="script" rel="preload" href="/component---src-layouts-landing-page-landing-page-tsx-c40292d7614cae139fad.js" />
     <link as="fetch" rel="preload" href="/page-data/lp/immigration-tn/page-data.json" crossorigin="anonymous" />
-    <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" /> -->
+    <link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous" /> 
 </head>
 
 <body>
@@ -3969,9 +3973,9 @@ sc-dWRHGJ
                         <div class="StyledBox-sc-13pk1d4-0 fxcbML Herostyled__Container-sc-2dpio7-0 fuGQQO">
                             <div class="StyledBox-sc-13pk1d4-0 kCeiZl Herostyled__ContentContainer-sc-2dpio7-4 bHtPXN">
                                 <div class="Herostyled__HeroContentLayout-sc-2dpio7-1 bmOKaU">
-                                    <div class="Herostyled__TextAnimationWrapper-sc-2dpio7-5 jLIvEf" style="opacity:5;transform:translateY(20px) translateZ(0)">
+                                    <div class="Herostyled__TextAnimationWrapper-sc-2dpio7-5 jLIvEf" style="opacity:1;transform:translateY(10px) translateZ(20px)">
                                         <h5 class="StyledHeading-sc-1rdh4aw-0 gVSeoe sc-khsqcC brDbSt Herostyled__Eyebrow-sc-2dpio7-6 dmrETE"> immigration lawyers</h5>
-                                        <h2 class="StyledHeading-sc-1rdh4aw-0 lgJzPy sc-khsqcC brDbSt Herostyled__Title-sc-2dpio7-7 ilpCyO">Get the right <br>lawyer for your <span class="Herostyled__HighlightText-sc-2dpio7-8 gcctAh">
+                                        <h2 class="StyledHeading-sc-1rdh4aw-0 lgJzPy sc-khsqcC brDbSt Herostyled__Title-sc-2dpio7-7 ilpCyO">Get the right <br>lawyer for your  <br><span class="Herostyled__HighlightText-sc-2dpio7-8 gcctAh">
                                             <span class="sc-xWrgk iXCDZi"><span class="sc-dWRHGJ eByvYe" id="textChange">immigration</span></span>
                                             </span>
                                         </h2><a href="/immigration/onboarding"><button tabindex="0" class="StyledBox-sc-13pk1d4-0 ktvllf sc-dkBdza Button__CustomButton-sc-1p0myx5-0 hyORZB kkvrZx">Let&#x27;s talk</button></a></div>
@@ -4425,7 +4429,11 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         var currentIndex = 0;
 
         function updateText(){
-            headingElement.innerHTML = text[currentIndex];
+            
+            setTimeout(function() {
+                headingElement.innerHTML = text[currentIndex]; // Update the text
+      headingElement.style.opacity = 1; // Fade in the element
+    }, 300);
             currentIndex=(currentIndex+1)%text.length;
         }
         updateText();
