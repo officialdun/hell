@@ -1376,6 +1376,10 @@
         
 
     }
+    .btn2{
+        display: inline-block;
+        
+    }
 
 
            
@@ -1433,6 +1437,9 @@
        font-weight: lighter;
        font-size: medium;
        color: #141C3A;
+    }
+    .btn2{
+        display: none;
     }
 
 
@@ -3229,12 +3236,25 @@
         .kkvrZx {
             min-width: 210px;
         }
+        .kkvrZx.btn2 {
+            min-width: 100px;
+        }
+
 
         /*!sc*/
 
         @media (max-width:960px) {
             .kkvrZx {
                 width: 100%;
+            }
+            .kkvrZx.btn2{
+                display: inline-block;
+                display: flex; /* Enable flexbox layout */
+                justify-content: center; 
+                height: 30px; /* Adjust the height as needed */
+                padding: 10px; /* Adjust the padding as needed */
+                font-size: 12px; 
+                
             }
         }
 
@@ -4099,6 +4119,9 @@
                                       </svg>
                                 </svg>
                                 </a>
+                                <div class="PhoneOnlyButton">
+                                    <a href="#"><button class="StyledBox-sc-13pk1d4-0 ktvllf sc-dkBdza Button__CustomButton-sc-1p0myx5-0 hyORZB kkvrZx btn2">Get Started</button></a>
+                                </div>
                             </div>
                         </div>
                     </div>
