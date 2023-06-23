@@ -1381,10 +1381,6 @@
         
     }
 
-
-           
-           
-         
     
            
         }
@@ -1444,7 +1440,25 @@
         display: none;
     }
 
+    #formContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 9999; /* Ensure the form appears on top of other elements */
+    }
 
+    #myForm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    }
 
 
 
@@ -4609,20 +4623,21 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
 
 
 
-
-
-
-
-
-
-
 </div>
 
 
 
 
 
-
+<div id="formContainer">
+    <form id="myForm">
+      <!-- Form fields go here -->
+      <input type="text" name="name" placeholder="Name">
+      <input type="email" name="email" placeholder="Email">
+      <textarea name="message" placeholder="Message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
 
 
 
@@ -4732,6 +4747,24 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         }
         updateText();
         setInterval(updateText, 3000);
+
+
+
+
+
+
+    const openFormButton = document.getElementById('btn1');
+    const formContainer = document.getElementById('formContainer');
+
+    openFormButton.addEventListener('click', function() {
+    formContainer.style.display = 'block';
+    });
+
+    formContainer.addEventListener('click', function(event) {
+    if (event.target === formContainer) {
+        formContainer.style.display = 'none';
+    }
+    });
 
         
         
