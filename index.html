@@ -1482,16 +1482,22 @@
     #myForm {
        
         
+  
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+
         position: absolute;
         top: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
         left: 50%;
-        min-width: 100vh;
         transform: translate(-50%, -50%);
         background-color: #fff;
         padding: 20px;
+        gap: 20px;
+        
+ 
+        
     }
 
     .FormInput{
@@ -1515,6 +1521,7 @@
         justify-content: center;  
         min-width: 100px; 
         margin: 10px;
+        background-color: #3e98c7;
     }
 
 
@@ -3351,8 +3358,9 @@
                 margin: 5px;
                 height: 30px; 
                 font-size: 15px;
-                min-width: auto;
-                max-width: 20px;
+                min-width: 100vx;
+                min-height: 100vx;
+               
                 min-height: fit-content;
         
              }
@@ -4737,7 +4745,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
 <div id="formContainer">
     
     
-    <form id="myForm">
+    <form>
       <!-- Form fields go here -->
       <div id="myForm">
         <h1  id="FormTitle">Form Title</h1>
@@ -4747,7 +4755,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         
         <div class="FormButtonsContainer" >
             <button class=" formButton Submit" type="submit">Submit</button>
-            <button class=" formButton Close" type="reset">close</button>
+            <button class=" formButton Close"  id="closebtn" type="reset">close</button>
         </div>
         
       </div>
@@ -4871,6 +4879,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
 
     const openFormButton = document.getElementById('btn1');
     const formContainer = document.getElementById('formContainer');
+    const closeBtn = document.getElementById("closebtn");
 
     openFormButton.addEventListener('click', function() {
     formContainer.style.display = 'block';
@@ -4880,6 +4889,11 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     if (event.target === formContainer) {
         formContainer.style.display = 'none';
     }
+    });
+
+
+    closeBtn.addEventListener('click', function(event){
+      formContainer.style.display = 'none'
     });
 
         
