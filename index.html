@@ -1388,17 +1388,21 @@
 
     #myForm {
        
-        max-width: 400px;
-        max-height: 400px;
+    
        
     }
 
     .FormInput{
+        
        
     }
 
     .message{
         
+    }
+
+    .FormButtonsContainer{
+        justify-content: center;
     }
 
     
@@ -1486,6 +1490,10 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
+        width: 70%; 
+        min-height: fit-content;
+        min-width: fit-content;
+        
         
 
         position: absolute;
@@ -1512,6 +1520,7 @@
     .FormButtonsContainer{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         
     }
 
@@ -4752,7 +4761,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     <form>
       <!-- Form fields go here -->
       <div id="myForm">
-        <h1  id="FormTitle">Form Title</h1>
+        <h1  id="FormTitle">Message us below</h1>
         <input type="text" name="name" class="FormInput name" placeholder="Name">
         <input type="email" name="email" class="FormInput email" placeholder="Email">
         <textarea name="message" class="FormInput message" placeholder="Message"></textarea>
