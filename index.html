@@ -1435,7 +1435,7 @@
         padding-bottom: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
-        line-height: 25px;
+        line-height: 10px;
     
         
     }
@@ -1448,9 +1448,13 @@
         
     }
     .StaffProfile{
-        color: blue;
-        
         padding-left: 15px;
+        
+    }
+    .StaffProfile.name{
+       font-family: "TomatoGroteskMedium";
+       size: 24px;
+        
     }
     .StaffProfile.title{
         color: #000;
@@ -1459,11 +1463,7 @@
        
     }
   
-    .StaffProfile.email{
-       font-weight: lighter;
-       font-size: medium;
-       color: #141C3A;
-    }
+   
     .btn2{
         display: none;
     }
@@ -1473,7 +1473,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        padding: 50px;
+        
     
         
         width: 100%;
@@ -1547,8 +1547,18 @@
         display: flex;
         justify-content: center; 
         font-size: 4em; 
-        color: #000000;
+        color: #2859fa;
+        
        
+    }
+    #moreinfo{
+        line-height: 5px;
+        
+        
+    }
+    .horizontalLine{
+        width: 100px;
+        width: 90%;
     }
 
 
@@ -4670,9 +4680,16 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
                                 </div>
                 <div class="ContactContainer">	 
                                     
-                                <div class="themestek-box-title"><h2 class="themestek-title"><span       class="StaffProfile">Mark Doherty</span></h2>
+                                <div class="themestek-box-title"><h2 class="themestek-title"><span       class="StaffProfile name">Mark Doherty</span></h2>
                                             
                                             <span class="StaffProfile title">Directing Manager <br> 
+                                                <hr  class="horizontalLine">
+                                    
+                                                <span id="moreinfo">
+                                                    <p style="font-weight: bold; color: #000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="StaffProfile">Practice areas: </p>
+                                                    <p style="color: #007aff;" class="StaffProfile"> Family Law</p>
+                                                </span>
+
                                             </span>
                                 </div>					
             </div>
@@ -4694,8 +4711,14 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
                     </div>
     <div class="ContactContainer">	 
                         
-                                <div class="themestek-box-title"><h2 class="themestek-title"><span class="StaffProfile">Paul Sampson</span></h2></div>				
+                                <div class="themestek-box-title"><h2 class="themestek-title"><span class="StaffProfile name">Paul Sampson</span></h2></div>				
                                 	<span class="StaffProfile title">Communications Director <br> 
+                                        <hr  class="horizontalLine">
+                                    
+                                        <span id="moreinfo">
+                                            <p style="font-weight: bold; color: #000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="StaffProfile">Practice areas: </p>
+                                            <p style="color: #007aff;" class="StaffProfile"> Family Law</p>
+                                        </span>
                                    
                                     </span>
 </div>
@@ -4717,8 +4740,15 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
                     </div>
     <div class="ContactContainer">	 
                         
-                                <div class="themestek-box-title"><h2 class="themestek-title"><span class="StaffProfile">Kevin M. Sayles</span></a></h2></div>			
+                                <div class="themestek-box-title"><h2 class="themestek-title"><span class="StaffProfile name">Kevin M. Sayles</span></a></h2></div>			
                                 <span class="StaffProfile title">Attorney <br> 
+                                    <hr  class="horizontalLine">
+                                    
+                                    <span id="moreinfo">
+                                        <p style="font-weight: bold; color: #000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="StaffProfile">Practice areas: </p>
+                                        <p style="color: #007aff;" class="StaffProfile"> Family Law</p>
+                                    </span>
+                                    
                                     
                                     </span>
 </div>
@@ -4739,8 +4769,14 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
                     </div>
     <div class="ContactContainer">	 
                         
-                                <div class="themestek-box-title"><h2 class="themestek-title"><span class="StaffProfile" >Miller Haln</span></a></h2></div>			
+                                <div class="themestek-box-title"><h2 class="themestek-title"><span class="StaffProfile name" >Miller Haln</span></a></h2></div>			
                                 <span class="StaffProfile title">Attorney <br> 
+                                    <hr  class="horizontalLine">
+                                    
+                                    <span id="moreinfo">
+                                        <p style="font-weight: bold; color: #000; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="StaffProfile">Practice areas: </p>
+                                        <p style="color: #007aff;" class="StaffProfile"> Family Law</p>
+                                    </span>
                                     
                                     </span>
 </div>
@@ -4762,7 +4798,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
       <!-- Form fields go here -->
       <div id="myForm">
         <h1  id="FormTitle">Message us below</h1>
-        <input type="text" name="name" class="FormInput name" placeholder="Name">
+        <input type="text" name="name" class="FormInput name" placeholder="Full Name">
         <input type="email" name="email" class="FormInput email" placeholder="Email">
         <textarea name="message" class="FormInput message" placeholder="Message"></textarea>
         
@@ -4884,6 +4920,9 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         }
         updateText();
         setInterval(updateText, 3000);
+
+
+
 
 
 
