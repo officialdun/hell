@@ -1605,7 +1605,10 @@
     picture{
         overflow: hidden;
     }
-
+    .swiper {
+        height: 350px;
+    
+    }
 
 
 
@@ -2616,6 +2619,7 @@
             -ms-flex-direction: row;
             flex-direction: row;
             padding-bottom: 36px;
+        
         }
 
         /*!sc*/
@@ -3599,6 +3603,7 @@
         .eJIXhx {
             position: relative;
             margin-top: 152px;
+            padding-top: 50px;
         }
 
         /*!sc*/
@@ -4488,7 +4493,7 @@
             </div>
         </div>
     </div>
-    <div class="StyledBox-sc-13pk1d4-0 bpUbtP Testimonials__Container-sc-1ygfkyc-1 eJIXhx">
+    <div class="StyledBox-sc-13pk1d4-0 bpUbtP Testimonials__Container-sc-1ygfkyc-1 eJIXhx"> 
         <div class="sc-cjibBx gNNqNk"><svg height="173" width="215" fill="#2e4056" viewBox="0 0 215 173" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="sc-bcXHqe ksiQkT Testimonials__QuotationMark-sc-1ygfkyc-2 dBrCUt"><path d="M176.584 172.2L214.384 0H168.184L109.384 172.2H176.584ZM0.183594 172.2H67.3836L105.184 0H58.9836L0.183594 172.2Z" fill="#FFFFFF" fill-opacity="0.1"></path></svg>
             <div
                 class="StyledBox-sc-13pk1d4-0 fxcbML sc-bQmOxr fHOwlz">
@@ -4608,7 +4613,31 @@
         </div>
     </div>
     </div>
-    </div>
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="StyledBox-sc-13pk1d4-0 kursY Bannerstyled__Container-sc-10yb3c0-0 gaMsd">
         <div class="Bannerstyled__ImgSection-sc-10yb3c0-1 etkSqc"><img src="https://a.storyblok.com/f/106832/1865x1241/cba5a93122/payment.png/m/0x720" alt="A man pays for his  family law attorney and gets the legal help he needs" class="Bannerstyled__Image-sc-10yb3c0-2 flYLoU" /></div>
         <div class="StyledBox-sc-13pk1d4-0 fxcbML Bannerstyled__ContentContainer-sc-10yb3c0-3 eYJTpV">
@@ -4971,6 +5000,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
     </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
 
         var headingElement = document.getElementById("textChange");
@@ -5042,8 +5072,47 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     
 
 
-    const rightBtn = document.getElementById("kKhNnU1");
-    const leftBtn = document.getElementById("jhRedY1");
+    const nextEl = document.querySelector('.swiper-button-next');
+    const prevEl = document.querySelector('.swiper-button-prev');
+
+
+    
+
+
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.kKhNnU',
+        prevEl: '.jhRedY',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    });
+
+
+
+
+
+
+
+
+
+
+
         
         
 
@@ -5107,7 +5176,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     <script src="/94a7ad86-d3c84ec9cf06c926913a.js" async=""></script>
     <script src="/framework-1efd3f7e294552bc2d08.js" async=""></script>
     <script src="/webpack-runtime-36808394463fc0ce412d.js" async=""></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
 </body>
 
 </html>
