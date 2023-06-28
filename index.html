@@ -4711,10 +4711,10 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         <div class="themestek-post-item">
                     <div class="image-container">
 
-                                        <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x426/cb589aa26f/walter-jackowiec.png"><img loading="lazy" alt="male lawyer" id="msgM1" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x426/cb589aa26f/walter-jackowiec.png">
+                                        <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x426/cb589aa26f/walter-jackowiec.png"><img loading="lazy" alt="male lawyer" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x426/cb589aa26f/walter-jackowiec.png">
                                         </picture>
 
-                                        <img class="svgMsg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg" onclick="showAlert"/>
+                                        <img class="svgMsg" id="msgM1" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg" onclick="showAlert()"/>
                                    		
                     </div>
                 <div class="ContactContainer">	 
@@ -5015,13 +5015,22 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     });
 
 
+    // msg1.style.display = "none";
 
 
     msg1.addEventListener('click', function(){
-        formContainer.style.display = 'block';
-        alert("helllpo");
-        
-    })
+        formContainer.style.display = 'block';        
+    });
+    msg2.addEventListener('click', function(){
+        formContainer.style.display = 'block';        
+    });
+    msg3.addEventListener('click', function(){
+        formContainer.style.display = 'block';        
+    });
+    msg4.addEventListener('click', function(){
+        formContainer.style.display = 'block';        
+    });
+    
         
         
 
