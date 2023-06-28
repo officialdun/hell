@@ -4711,10 +4711,10 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         <div class="themestek-post-item">
                     <div class="image-container">
 
-                                        <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x426/cb589aa26f/walter-jackowiec.png"><img loading="lazy" alt="male lawyer" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x426/cb589aa26f/walter-jackowiec.png">
+                                        <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x426/cb589aa26f/walter-jackowiec.png"><img loading="lazy" alt="male lawyer" id="msgM1" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x426/cb589aa26f/walter-jackowiec.png">
                                         </picture>
 
-                                        <img class="svgMsg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>
+                                        <img class="svgMsg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg" onclick="showAlert"/>
                                    		
                     </div>
                 <div class="ContactContainer">	 
@@ -4750,7 +4750,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         <div class="image-container">
                 
                                 <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x426/6359d32957/vanessa-tuttle.png"><img loading="lazy" alt="woman lawyer" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x426/6359d32957/vanessa-tuttle.png"></picture>
-                                <img class="svgMsg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>		
+                                <img class="svgMsg" id="msgM2" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>		
                     </div>
     <div class="ContactContainer">	 
                         
@@ -4782,7 +4782,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         <div class="image-container">
                             <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x425/6d1552c813/corwin-kruse.png"><img loading="lazy" alt="Corwin Kruse" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x425/6d1552c813/corwin-kruse.png"></picture>
 
-                            <img class="svgMsg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>
+                            <img class="svgMsg" id="msgM3" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>
       
                      		
                     </div>
@@ -4817,7 +4817,7 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
                         
                                 
                             <picture><source type="image/webp" srcset="https://img2.storyblok.com/384x0/filters:format(webp)/f/106832/768x426/7cf0328177/michael-stivers.png"><img loading="lazy" alt="male lawyer" width="100%" src="https://img2.storyblok.com/384x0/f/106832/768x426/7cf0328177/michael-stivers.png"></picture>
-                            <img class="svgMsg" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>
+                            <img class="svgMsg"  id="msgM4" src="https://upload.wikimedia.org/wikipedia/commons/6/67/Google_Messages_icon_%282022%29.svg"/>
                         		
                     </div>
     <div class="ContactContainer">	 
@@ -4980,7 +4980,14 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
         updateText();
         setInterval(updateText, 3000);
 
+    
 
+    const msg1 = document.getElementById("msgM1");
+    const msg2 = document.getElementById("msgM2");
+    const msg3 = document.getElementById("msgM3");
+    const msg4 = document.getElementById("msgM4");
+    
+   
 
 
 
@@ -5007,6 +5014,14 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
       formContainer.style.display = 'none'
     });
 
+
+
+
+    msg1.addEventListener('click', function(){
+        formContainer.style.display = 'block';
+        alert("helllpo");
+        
+    })
         
         
 
