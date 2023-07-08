@@ -4948,10 +4948,8 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
             <p class="StyledText-sc-1sadyjn-0 ezQuDc sc-iAEawV ecjBdt">Legal Information</p>
             <div class="StyledBox-sc-13pk1d4-0 fxcbML sc-jcMfQk pgBUM">
                 <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="/our-attorneys">Our managing attorneys</a></p>
-                <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="/privacy">Privacy policy</a></p>
-                <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="/terms-of-use">Terms of use</a></p>
-                <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="/do-not-sell-my-info">Do not sell my info</a></p>
-                <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="/disability-contact-form">Disability contact form</a></p>
+                <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="mailto:support@attawaylawfirm.com">Do not sell my info</a></p>
+                <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" onclick="SendMsg()">Disability contact form</a></p>
                 <p class="StyledText-sc-1sadyjn-0 ksCauj sc-iAEawV sc-eeMvmM ecjBdt dabAZT sc-iWOQzb cwyUss"><a class="style__StyledLink-sc-oxg7h9-0 kOuoIh" href="/disclaimer">Disclaimer</a></p>
                 <div class="StyledBox-sc-13pk1d4-0 fxcbML sc-jcMfQk gSweYf"></div>
             </div>
@@ -5023,6 +5021,12 @@ Naturalization is the most common way for immigrants to get US citizenship. Ever
     closeBtn.addEventListener('click', function(event){
       formContainer.style.display = 'none'
     });
+    function SendMsg(){
+        if (event.target === formContainer) {
+             formContainer.style.display = 'none';
+         }
+
+    }
 
 
     msg1.style.display = "none";
